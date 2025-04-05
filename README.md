@@ -33,3 +33,35 @@ API used: [Swagger Petstore](https://petstore.swagger.io/#/)
 ---
 
 ## 📁 Project Structure
+cypress-practical-test/ ├── cypress/ │ ├── e2e/ │ │ ├── UI/ │ │ │ ├── features/ │ │ │ └── pages/ │ │ ├── api/ │ │ │ ├── features/ │ │ │ └── step_definitions/ │ │ └── step_definitions/ │ ├── support/ │ └── reports/ # Contains screenshots/videos and HTML reports ├── cypress.config.js ├── cypress-cucumber-preprocessor.config.js ├── package.json └── README.md
+
+## 🚀 Getting Started
+
+### 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vishaljoga/AmphoraTest.git
+   cd AmphoraTest
+Install dependencies:
+npm install
+🧪 Running the Tests
+✅ UI Tests
+npx cypress run --spec "cypress/e2e/UI/features/*.feature"
+✅ API Tests
+npx cypress run --spec "cypress/e2e/api/features/*.feature"
+🖥️ Open Cypress Test Runner (Optional)
+npx cypress open
+📊 Reports & Debugging
+HTML Report generated using mochawesome is located in:
+
+cypress/reports/index.html
+Failure Screenshots/Videos are captured automatically and stored under:
+
+cypress/reports/screenshots/
+🔐 Code Authenticity
+All tests are authored by me and designed specifically for this test. No third-party code generation tools were used. Feedback is welcome.
+
+🔗 Submission
+✅ GitHub Repository Link:
+https://github.com/Vishaljoga/AmphoraTest
